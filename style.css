@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    background-color: #ecf0f3;
+}
+.container{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(226, 219, 221);
+    /* width: 400px; */
+    /* border-radius: 10px; */
+}
+.calc{
+    box-shadow: 6px 6px 12px  #fff, 10px 10px 12px rgba(0,0,0,.16);
+    padding: 16px;
+    display: grid;
+    grid-template-columns: repeat(5,80px);
+    width: 450px;
+    grid-auto-flow: min;
+    border-radius: 10px;
+}
+input{
+    grid-column: span 5;
+    height: 68px;
+    text-align: right;
+    width: 400px;
+    box-shadow: inset -6px -6px 12px #fff,inset 6px 6px 13px rgba(0,0,0,.16);
+    border:none ;
+    color: rgb(26,25,25);
+    margin: 30px 0px 30px 0px;
+    padding: 20px;
+    font-size: 40px;
+}
+button{
+    background-color: #ecf0f3;
+    box-shadow:  6px 6px 12px #ebe2e2, 6px 6px 13px rgba(0,0,0,.16);
+    border:none ;
+    width: 90%;
+    height:30px ;
+    margin: 5px;
+    font-weight: bold;
+    font-size: 15px;
+}
+button.duplicate{
+    background-color: none;
+    box-shadow: none;
+    border: none;
+
+}
+button.duplicate:hover{
+    background-color: white;
+
+}
+.btn-trig{
+    grid-column: 1 /span 2;
+}
+.btn-func{
+    grid-column: 3 /span 2;
+}
+button:hover sup, #trigno:hover sup, #func:hover sup ,button:hover , #trigno:hover , #func:hover  {
+    background-color: #4db8ff;
+    /* color: white; */
+}
+
+#trigno{
+    width: 90%;
+    height: 84%;
+    border: none;
+}
+#func{
+    width: 90%;
+    height: 84%;
+    border: none;
+}
+#trigno, #func{
+    background: none;
+    border: none;
+    outline: none;
+    font-size: 15px;
+}
